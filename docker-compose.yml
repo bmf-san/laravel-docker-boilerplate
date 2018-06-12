@@ -22,7 +22,7 @@ services:
       - mysql_db:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=rubel
+      - MYSQL_DATABASE=laravel
 volumes:
   mysql_db:
     driver: local
