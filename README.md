@@ -23,10 +23,10 @@ docker-compose up -d
 
 ## Setup the backend-app
 ```
-docker exec -it php /bin/sh -c "cd /laravel && composer install"
-docker exec -it php /bin/sh -c "cd /laravel && npm cache verify && npm install"
-docker exec -it php /bin/sh -c "cd /laravel && php artisan key:generate"
-docker exec -it php /bin/sh -c "cd /laravel && php artisan migrate && php artisan db:seed"
+docker exec -it php /bin/sh -c "cd laravel && composer install"
+docker exec -it php /bin/sh -c "cd laravel && npm cache verify && npm install"
+docker exec -it php /bin/sh -c "cd laravel && php artisan key:generate"
+docker exec -it php /bin/sh -c "cd laravel && php artisan migrate && php artisan db:seed"
 ```
 
 ## Add hosts settings to `/etc/hosts`
